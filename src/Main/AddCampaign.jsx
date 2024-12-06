@@ -1,27 +1,64 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet';
+import Swal from 'sweetalert2'
 
 const AddCampaign = () => {
 
 
 
-    const handleAddCoffee = event => {
+    const handleAddCampaign = event => {
         event.preventDefault();
-        console.log("Added Coffee")
         const form = event.target;
+        const image = form.image.value;
+        const title = form.title.value;
+        const campaignType = form.campaignType.value;
+        const description = form.description.value;
+        const amount = form.amount.value;
+        const date = form.date.value;
+        const email = form.email.value;
         const name = form.name.value;
-        const quantity = form.quantity.value;
-        const supplier = form.supplier.value;
-        const taste = form.taste.value;
-        const category = form.category.value;
-        const details = form.details.value;
-        const photo = form.photo.value;
 
 
-        const newCoffee = { name, quantity, supplier, taste, category, details, photo }
+        const newCampaign = { image, title, campaignType, description, amount, date, email, name }
 
-        console.log(name, quantity, supplier, taste, category, details, photo)
-        console.log(newCoffee);
+        console.log(image, title, campaignType, description, amount, date, email, name)
+        console.log(newCampaign);
+
+        fetch('http://localhost:5000/campaigns', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+
+            body: JSON.stringify(newCampaign)
+        })
+
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if (data.insertedId) {
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Campaign Added Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Thank You'
+                })
+            }
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
@@ -29,135 +66,128 @@ const AddCampaign = () => {
 
 
 
-
-
-
-
     return (
-    <div>
+        <div>
 
-        <div >
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Add Campaign</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet>
-           
+            <div >
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Add Campaign</title>
+                    <link rel="canonical" href="http://mysite.com/example" />
+                </Helmet>
+
+            </div>
+
+            <div className=" container mx-auto bg-[#fc4c3f]  mt-16 p-24 my-24 text-center flex flex-col ">
+                <h2 className="text-4xl py-4 font-extrabold">Add New Campaign</h2>
+                <form onSubmit={handleAddCampaign}>
+                 
+                    <div className="md:flex mb-8 gap-4">
+                        <div className="form-control  md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Image</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="image" placeholder="Campaign Image Url" className="input input-bordered w-full "  required/>
+
+                            </label>
+
+                        </div>
+                        <div className="form-control  md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Campaign Title</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="title" placeholder="Campaign Title Here " className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <div className="md:flex  mb-8 gap-4">
+
+                        <div className="form-control  md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Campaign Type</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="campaignType" placeholder="Campaign Type Here " className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                        <div className="form-control  md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Description</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="description" placeholder="Your Campaign Description" className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                    </div>
+                    <div className="md:flex mb-8 gap-4">
+
+                        <div className="form-control   md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Donation Amount</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="number" name="amount" placeholder="Minimum donation amount" className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                        <div className="form-control md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">DeadLine</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="date" name="date" placeholder="08/12/2024" className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                    </div>
+                    <div className="md:flex mb-8 gap-4">
+
+                        <div className="form-control   md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Email</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="email" name="email" placeholder="User Email" className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                        <div className="form-control md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Name</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="name" placeholder="User Name" className="input input-bordered w-full " />
+
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Add Campaign" className="btn btn-block" />
+                </form>
+            </div>
         </div>
-
-        <div className=" container mx-auto bg-[#fc4c3f]  mt-16 p-24 my-24 text-center flex flex-col ">
-        <h2 className="text-4xl py-4 font-extrabold">Add New Campaign</h2>
-        <form onSubmit={handleAddCoffee}>
-            {/* coffee name  */}
-            <div className="md:flex mb-8 gap-4">
-                <div className="form-control  md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Image</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="image" placeholder="Campaign Image Url" className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-                <div className="form-control  md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Campaign Title</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="title" placeholder="Campaign Title Here " className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-            </div>
-
-            
-            <div className="md:flex  mb-8 gap-4">
-
-                <div className="form-control  md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Campaign Type</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="campaignType" placeholder="Campaign Type Here " className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-                <div className="form-control  md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Description</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="description" placeholder="Your Campaign Description" className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-            </div>
-            <div className="md:flex mb-8 gap-4">
-
-                <div className="form-control   md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Donation Amount</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="number" name="amount" placeholder="Minimum donation amount" className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-                <div className="form-control md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">DeadLine</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="date" name="date" placeholder="08/12/2024" className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-            </div>
-            <div className="md:flex mb-8 gap-4">
-
-                <div className="form-control   md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Email</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="email" name="email" placeholder="User Email" className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-                <div className="form-control md:w-1/2 ">
-                    <label className="label">
-                        <span className="label-text font-bold text-lg">Name</span>
-
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="name" placeholder="User Name" className="input input-bordered w-full " />
-
-                    </label>
-
-                </div>
-            </div>
-            
-            <input type="submit" value="Add Campaign" className="btn btn-block" />
-        </form>
-    </div>
-    </div>
-
-
-
 
     );
 };
