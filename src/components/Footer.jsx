@@ -18,7 +18,7 @@ const Footer = () => {
                     <div>
                         <div className='flex gap-2 '>
                             <img className='w-12' src={logo} alt="" />
-                            <h3 className="text-3xl font-extrabold text-left">Crowd Funding</h3>
+                            <h3 className="text-3xl font-extrabold text-left"><span className="text-red-500">Crowd</span> Funding</h3>
                         </div>
                         <p className='lg:text-left pt-4  text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod voluptas ratione aliquid voluptatibus possimus doloremque mollitia. </p>
 

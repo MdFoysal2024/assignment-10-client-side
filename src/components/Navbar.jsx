@@ -50,7 +50,7 @@ const Navbar = () => {
                    
                     <a className="btn btn-ghost text-xl">
                         <img className="w-12 " src={logo} alt="" />
-                        <h2 className="text-xl  md:text-3xl pl-2 font-extrabold">Crowd Funding</h2>
+                        <h2 className="text-xl  md:text-3xl pl-2 font-extrabold"> <span className="text-red-500">Crowd</span> Funding</h2>
                     </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
