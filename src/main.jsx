@@ -17,6 +17,7 @@ import SignUp from './components/SignUp';
 import AuthProvider from './provider/AuthProvider';
 import SignIn from './components/SignIn';
 import PrivateRoute from './routes/PrivateRoute';
+import CampaignDetails from './components/CampaignDetails';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/allCampaign",
         element: <AllCampaign></AllCampaign>,
+        loader: () => fetch('http://localhost:5000/campaigns')
       },
       {
         path: "/addNewCampaign",
@@ -45,18 +47,18 @@ const router = createBrowserRouter([
         path: "/myCampaign",
 
         element: (
-        <PrivateRoute>
-          <MyCampaign></MyCampaign>
-        </PrivateRoute>
+          <PrivateRoute>
+            <MyCampaign></MyCampaign>
+          </PrivateRoute>
         ),
       },
       {
         path: "/myDonations",
         element: (
           <PrivateRoute>
-           <MyDonations></MyDonations>,
+            <MyDonations></MyDonations>,
           </PrivateRoute>
-          ),
+        ),
       },
       {
         path: "/signIn",
@@ -66,6 +68,17 @@ const router = createBrowserRouter([
         path: "/signUp",
         element: <SignUp></SignUp>
       },
+      {
+        path: "/campaignDetails/:id",
+        element: <CampaignDetails></CampaignDetails>,
+        loader: async ({ params }) => {
+          const paramsData = await fetch("http://localhost:5000/campaigns")
+          const data = await paramsData.json();
+          const singleData = data.find(d => d._id == params.id)
+          return singleData;
+        }
+      },
+
     ],
   },
 ]);
