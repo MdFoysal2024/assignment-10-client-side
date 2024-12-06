@@ -124,7 +124,7 @@ const Home = () => {
             {/* Works Card section */}
 
             <div className="w-10/12 mx-auto py-24">
-            <h2 className="text-5xl font-extrabold text-center py-8">How It Works</h2>
+                <h2 className="text-5xl font-extrabold text-center py-8">How It Works</h2>
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 ">
                     <div className="text-center flex flex-col items-center space-y-4 p-12 m-4 bg-slate-200 border-2">
                         <img className="w-32 pb-4" src="https://icons-for-free.com/iff/png/512/dollar+funds+hand+payment+icon+icon-1320086640827007356.png" alt="" />
