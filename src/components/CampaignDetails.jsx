@@ -31,7 +31,7 @@ const CampaignDetails = () => {
             if (data.insertedId) {
                 Swal.fire({
                     title: 'Success',
-                    text: 'Campaign Added Successfully',
+                    text: 'You Have Donated Successfully',
                     icon: 'success',
                     confirmButtonText: 'Thank You'
                 })

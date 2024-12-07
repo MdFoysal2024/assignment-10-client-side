@@ -72,11 +72,16 @@ const router = createBrowserRouter([
       {
         path: "/campaignUpdate/:id",
         element: <CampaignUpdate></CampaignUpdate>,
-        
+
       },
       {
         path: "/campaignDetails/:id",
-        element: <CampaignDetails></CampaignDetails>,
+
+        element: (
+          <PrivateRoute>
+            <CampaignDetails></CampaignDetails>,
+          </PrivateRoute>
+        ),
         loader: async ({ params }) => {
           const paramsData = await fetch("http://localhost:5000/campaigns")
           const data = await paramsData.json();

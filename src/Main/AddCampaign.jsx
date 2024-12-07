@@ -7,6 +7,7 @@ const AddCampaign = () => {
 
 
     const handleAddCampaign = event => {
+
         event.preventDefault();
         const form = event.target;
         const image = form.image.value;
@@ -48,21 +49,7 @@ const AddCampaign = () => {
         })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
 
 
 
