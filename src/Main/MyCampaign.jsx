@@ -83,9 +83,9 @@ const MyCampaign = () => {
                 <title>My Campaign</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            <h2 className='text-center pb-8 text-3xl font-bold'>
+            <h2 className='text-center pb-12 text-5xl font-bold'>
 
-                My Campaign({myCampaign.length})
+                My <span className='text-red-500'>Campaign</span> 
             </h2>
 
             {/* user info({users.length}) */}
@@ -94,7 +94,7 @@ const MyCampaign = () => {
                     {/* head */}
                     <thead>
                         <tr className='bg-slate-500 text-lg text-white '>
-                            <th className='py-6'>No</th>
+                            <th className='py-6 pl-8'>No</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Donation Amount</th>
@@ -107,7 +107,7 @@ const MyCampaign = () => {
                         {
                             myCampaign.map((campaign, idx) =>
                                 <tr className='bg-slate-300 text-lg' key={campaign._id}>
-                                    <th>{idx + 1}</th>
+                                    <th className='pl-8'>{idx + 1}</th>
                                     <td>{campaign.name}</td>
                                     <td>{campaign.email}</td>
                                     <td className='font-bold'>${campaign.amount}</td>

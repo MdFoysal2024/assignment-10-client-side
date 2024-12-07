@@ -1,8 +1,17 @@
-import Marquee from "react-fast-marquee";
+
 import { Helmet } from "react-helmet";
 import Banner from "./Banner";
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import CampaignCard from "./CampaignCard";
 
 const Home = () => {
+
+
+    const campaignData = useLoaderData()
+    // const [runningCampaigns, setRunningCampaigns] = useState(campaignData)
+
+    console.log(campaignData)
     return (
         <div >
 
@@ -20,111 +29,28 @@ const Home = () => {
 
             {/* Running Card section */}
             <div className="w-10/12 mx-auto py-24">
-                Home page
-                <Marquee className="">
-                    <div className="ml-8">
-                        <div className="card bg-base-100 w-96 shadow-xl">
-                            <figure>
-                                <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="ml-8">
-                        <div className="card bg-base-100 w-96 shadow-xl">
-                            <figure>
-                                <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="ml-8">
-                        <div className="card bg-base-100 w-96 shadow-xl">
-                            <figure>
-                                <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="ml-8">
-                        <div className="card bg-base-100 w-96 shadow-xl">
-                            <figure>
-                                <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="ml-8">
-                        <div className="card bg-base-100 w-96 shadow-xl">
-                            <figure>
-                                <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="ml-8">
-                        <div className="card bg-base-100 w-96 shadow-xl">
-                            <figure>
-                                <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                    alt="Shoes" />
-                            </figure>
-                            <div className="card-body">
-                                <h2 className="card-title">Shoes!</h2>
-                                <p>If a dog chews shoes whose shoes does he choose?</p>
-                                <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </Marquee>
+                <h2 className="text-center text-5xl pb-16 font-extrabold">Running <span className="text-red-500">Campaign</span> </h2>
+
+
+
+                <div className="grid  gap-16 justify-between w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    {
+                        campaignData.slice(0, 6).map(campaign => <CampaignCard key={campaign._id} campaign={campaign}></CampaignCard>)
+                    }
+                </div>
+
+
+
             </div>
+
+
+
+
 
             {/* Works Card section */}
 
             <div className="w-10/12 mx-auto py-24">
-                <h2 className="text-5xl font-extrabold text-center py-8">How It Works</h2>
+                <h2 className="text-5xl font-extrabold text-center py-8">How It <span className="text-red-500">Works</span></h2>
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 ">
                     <div className="text-center flex flex-col items-center space-y-4 p-12 m-4 bg-slate-200 border-2">
                         <img className="w-32 pb-4" src="https://icons-for-free.com/iff/png/512/dollar+funds+hand+payment+icon+icon-1320086640827007356.png" alt="" />

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useLoaderData } from 'react-router-dom';
-import CampaignCard from '../components/CampaignCard';
+
 
 const AllCampaign = () => {
 
@@ -17,9 +17,9 @@ const AllCampaign = () => {
                 <title>All Campaign</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            <h3 className='text-center font-bold text-4xl pb-12'>
+            <h3 className='text-center font-bold text-5xl pb-12'>
 
-                All Campaign Here({campaigns.length})
+                All Users <span className='text-red-500'>Campaign </span>
             </h3>
 
 
@@ -29,7 +29,7 @@ const AllCampaign = () => {
                     {/* head */}
                     <thead className='text-lg'>
                         <tr className='bg-slate-600 text-lg text-white'>
-                            <th>No</th>
+                            <th className='pl-8'>No</th>
                             <th>Name</th>
                             <th>Email</th>
                             <th>Campaign Title</th>
@@ -42,7 +42,7 @@ const AllCampaign = () => {
                         {
                             campaigns.map((campaign, idx) =>
                                 <tr className='bg-slate-300 ' key={campaign._id}>
-                                    <th>{idx + 1}</th>
+                                    <th className='pl-8'>{idx + 1}</th>
                                     <td>{campaign.name}</td>
                                     <td>{campaign.email}</td>
                                     <td>{campaign.title}</td>
