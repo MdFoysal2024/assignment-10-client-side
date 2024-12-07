@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const CampaignUpdate = () => {
@@ -16,7 +16,7 @@ const CampaignUpdate = () => {
 
     const [updateCampaign, setUpdateCampaign] = useState({})
 
-    const { image, title, campaignType, description, amount, date } = updateCampaign || {};
+    const { image, title, campaignType, description, amount, date, name, email } = updateCampaign || {};
 
     useEffect(() => {
         fetch(`http://localhost:5000/updateCampaign/${id}`)
@@ -41,8 +41,10 @@ const CampaignUpdate = () => {
         const description = form.description.value;
         const amount = form.amount.value;
         const date = form.date.value;
+        const email = form.email.value;
+        const name = form.name.value;
 
-        const newUpdateCampaign = { image, title, campaignType, description, amount, date }
+        const newUpdateCampaign = { image, title, campaignType, description, amount, date, email, name }
 
         console.log(image, title, campaignType, description, amount, date)
         console.log(newUpdateCampaign);
@@ -57,19 +59,19 @@ const CampaignUpdate = () => {
             body: JSON.stringify(newUpdateCampaign)
         })
 
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if (data.modifiedCount > 0) {
-                Swal.fire({
-                    title: 'Success',
-                    text: 'Campaign Updated Successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Thank You'
-                })
-            }
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.modifiedCount > 0) {
+                    Swal.fire({
+                        title: 'Success',
+                        text: 'Campaign Updated Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Thank You'
+                    })
+                }
 
-        })
+            })
 
 
 
@@ -171,33 +173,39 @@ const CampaignUpdate = () => {
 
                         </div>
                     </div>
-                    {/* <div className="md:flex mb-8 gap-4">
+                    <div className="md:flex mb-8 gap-4">
 
-                    <div className="form-control   md:w-1/2 ">
-                        <label className="label">
-                            <span className="label-text font-bold text-lg">Email</span>
+                        <div className="form-control   md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Email</span>
 
-                        </label>
-                        <label className="input-group">
-                            <input type="email" name="email" placeholder="User Email" className="input input-bordered w-full " />
+                            </label>
+                            <label className="input-group">
+                                <input type="email" name="email" placeholder="User Email" className="input input-bordered w-full " defaultValue={email} />
 
-                        </label>
+                            </label>
 
+                        </div>
+                        <div className="form-control md:w-1/2 ">
+                            <label className="label">
+                                <span className="label-text font-bold text-lg">Name</span>
+
+                            </label>
+                            <label className="input-group">
+                                <input type="text" name="name" placeholder="User Name" className="input input-bordered w-full " defaultValue={name} />
+
+                            </label>
+
+                        </div>
                     </div>
-                    <div className="form-control md:w-1/2 ">
-                        <label className="label">
-                            <span className="label-text font-bold text-lg">Name</span>
-
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="name" placeholder="User Name" className="input input-bordered w-full " />
-
-                        </label>
-
-                    </div>
-                </div> */}
 
                     <input type="submit" value="Update Campaign" className="btn w-full  bg-[#dd4e41] font-bold hover:text-black text-white text-lg" />
+
+
+                    {/* <Link to='/myCampaign'>
+                        <input type="submit" value="Update Campaign" className="btn w-full  bg-[#dd4e41] font-bold hover:text-black text-white text-lg" />
+                    </Link> */}
+                    
                 </form>
             </div>
         </div>
