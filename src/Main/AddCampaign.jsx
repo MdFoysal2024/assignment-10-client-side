@@ -78,8 +78,8 @@ const AddCampaign = () => {
 
             </div>
 
-            <div className=" container mx-auto bg-[#fc4c3f]  mt-16 p-24 my-24 text-center flex flex-col ">
-                <h2 className="text-4xl py-4 font-extrabold">Add New Campaign</h2>
+            <div className=" container mx-auto bg-[#fde3e1] shadow-xl  mt-16 p-24 my-24 text-center flex flex-col ">
+                <h2 className="text-5xl pb-8 font-extrabold">Add New <span className='text-red-500'>Campaign</span> </h2>
                 <form onSubmit={handleAddCampaign}>
                  
                     <div className="md:flex mb-8 gap-4">
@@ -184,7 +184,7 @@ const AddCampaign = () => {
                         </div>
                     </div>
 
-                    <input type="submit" value="Add Campaign" className="btn btn-block" />
+                    <input type="submit" value="Add Campaign" className="btn w-full  bg-[#dd4e41] font-bold hover:text-black text-white text-lg" />
                 </form>
             </div>
         </div>

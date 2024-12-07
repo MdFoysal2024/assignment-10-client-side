@@ -17,9 +17,9 @@ const AllCampaign = () => {
                 <title>All Campaign</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            <h3 className='text-center text-4xl py-6'>
+            <h3 className='text-center font-bold text-4xl pb-12'>
 
-                All Campaign here({campaigns.length})
+                All Campaign Here({campaigns.length})
             </h3>
 
 
@@ -28,7 +28,7 @@ const AllCampaign = () => {
                 <table className="table">
                     {/* head */}
                     <thead className='text-lg'>
-                        <tr>
+                        <tr className='bg-slate-600 text-lg text-white'>
                             <th>No</th>
                             <th>Name</th>
                             <th>Email</th>
@@ -41,7 +41,7 @@ const AllCampaign = () => {
                         {/* row 1 */}
                         {
                             campaigns.map((campaign, idx) =>
-                                <tr key={campaign._id}>
+                                <tr className='bg-slate-300 ' key={campaign._id}>
                                     <th>{idx + 1}</th>
                                     <td>{campaign.name}</td>
                                     <td>{campaign.email}</td>

@@ -18,6 +18,7 @@ import AuthProvider from './provider/AuthProvider';
 import SignIn from './components/SignIn';
 import PrivateRoute from './routes/PrivateRoute';
 import CampaignDetails from './components/CampaignDetails';
+import CampaignUpdate from './components/CampaignUpdate';
 
 
 const router = createBrowserRouter([
@@ -67,6 +68,11 @@ const router = createBrowserRouter([
       {
         path: "/signUp",
         element: <SignUp></SignUp>
+      },
+      {
+        path: "/campaignUpdate/:id",
+        element: <CampaignUpdate></CampaignUpdate>,
+        // loader: ({params}) => fetch(`http://localhost:5000/campaigns/${params.id}`)
       },
       {
         path: "/campaignDetails/:id",

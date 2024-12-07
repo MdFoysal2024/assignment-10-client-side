@@ -7,7 +7,7 @@ import { IoPersonCircleOutline } from "react-icons/io5";
 const Navbar = () => {
 
     const { user, logOut } = useContext(AuthContext)
-    console.log(user)
+    // console.log(user)
 
 
 
