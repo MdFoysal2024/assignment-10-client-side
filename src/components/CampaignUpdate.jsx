@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { useLoaderData, useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const CampaignUpdate = () => {
 
@@ -31,7 +32,52 @@ const CampaignUpdate = () => {
 
     // console.log(updateCampaign)
 
+    const handleUpdateCampaign = event => {
+        event.preventDefault();
+        const form = event.target;
+        const image = form.image.value;
+        const title = form.title.value;
+        const campaignType = form.campaignType.value;
+        const description = form.description.value;
+        const amount = form.amount.value;
+        const date = form.date.value;
 
+        const newUpdateCampaign = { image, title, campaignType, description, amount, date }
+
+        console.log(image, title, campaignType, description, amount, date)
+        console.log(newUpdateCampaign);
+
+
+        fetch(`http://localhost:5000/newUpdateCampaign/${id}`, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+
+            body: JSON.stringify(newUpdateCampaign)
+        })
+
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if (data.modifiedCount > 0) {
+                Swal.fire({
+                    title: 'Success',
+                    text: 'Campaign Updated Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Thank You'
+                })
+            }
+
+        })
+
+
+
+
+
+
+
+    }
 
     return (
         <div>
@@ -44,10 +90,10 @@ const CampaignUpdate = () => {
                 </Helmet>
 
             </div>
-            {/* onSubmit={handleAddCampaign} */}
+
             <div className=" container mx-auto bg-[#fde3e1] shadow-xl  mt-16 p-24 my-24 text-center flex flex-col ">
                 <h2 className="text-5xl pb-8 font-extrabold">Update <span className='text-red-500'>Campaign</span> </h2>
-                <form >
+                <form onSubmit={handleUpdateCampaign}>
 
                     <div className="md:flex mb-8 gap-4">
                         <div className="form-control  md:w-1/2 ">

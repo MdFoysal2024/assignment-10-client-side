@@ -29,9 +29,6 @@ const MyCampaign = () => {
 
 
 
-
-
-
     const handleDelete = _id => {
         console.log(_id)
         Swal.fire({
@@ -47,8 +44,8 @@ const MyCampaign = () => {
                 if (result.isConfirmed) {
 
                     console.log('Delete Confirmed');
-                    fetch(`http://localhost:5000/myCampaign/${_id}`, {
-                        method: "DELETE"
+                    fetch(`http://localhost:5000/deleteCampaign/${_id}`, {
+                        method: "DELETE",
 
                     })
                         .then(res => res.json())
@@ -57,7 +54,7 @@ const MyCampaign = () => {
                             if (data.deletedCount > 0) {
                                 Swal.fire({
                                     title: "Deleted!",
-                                    text: "Your Coffee has been deleted.",
+                                    text: "Your Campaign has been deleted.",
                                     icon: "success"
                                 });
 
