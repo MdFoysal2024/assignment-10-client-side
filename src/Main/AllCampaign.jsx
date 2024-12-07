@@ -46,7 +46,7 @@ const AllCampaign = () => {
                                     <td>{campaign.name}</td>
                                     <td>{campaign.email}</td>
                                     <td>{campaign.title}</td>
-                                    <td>{campaign.amount}$</td>
+                                    <td className='font-bold'>{campaign.amount}$</td>
                                     <td>
                                         <Link to={`/campaignDetails/${campaign._id}`}>
                                             <button className='bg-red-500 font-bold text-white py-2 px-3 cursor-pointer'>See More</button>

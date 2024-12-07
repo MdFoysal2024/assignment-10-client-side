@@ -2,17 +2,15 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const CampaignUpdate = () => {
 
 
-    // const campaignData = useLoaderData(); 
-    // console.log(campaignData)
 
     const { id } = useParams();
-    console.log(id)
+    // console.log(id)
 
     const [updateCampaign, setUpdateCampaign] = useState({})
 
@@ -46,8 +44,8 @@ const CampaignUpdate = () => {
 
         const newUpdateCampaign = { image, title, campaignType, description, amount, date, email, name }
 
-        console.log(image, title, campaignType, description, amount, date)
-        console.log(newUpdateCampaign);
+        // console.log(image, title, campaignType, description, amount, date)
+        // console.log(newUpdateCampaign);
 
 
         fetch(`http://localhost:5000/newUpdateCampaign/${id}`, {
@@ -61,7 +59,7 @@ const CampaignUpdate = () => {
 
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'Success',
@@ -205,7 +203,7 @@ const CampaignUpdate = () => {
                     {/* <Link to='/myCampaign'>
                         <input type="submit" value="Update Campaign" className="btn w-full  bg-[#dd4e41] font-bold hover:text-black text-white text-lg" />
                     </Link> */}
-                    
+
                 </form>
             </div>
         </div>

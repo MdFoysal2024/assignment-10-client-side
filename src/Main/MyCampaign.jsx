@@ -110,7 +110,7 @@ const MyCampaign = () => {
                                     <th>{idx + 1}</th>
                                     <td>{campaign.name}</td>
                                     <td>{campaign.email}</td>
-                                    <td>${campaign.amount}</td>
+                                    <td className='font-bold'>${campaign.amount}</td>
                                     <td>{campaign.date}</td>
 
                                     <td>

@@ -1,7 +1,30 @@
-import React from 'react';
+
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 
+
 const MyDonations = () => {
+
+    const [myDonations, setMyDonations] = useState([]);
+
+    //http://localhost:5000/myDonations
+
+
+    // http://localhost:5000/campaigns
+
+    useEffect(() => {
+        fetch('http://localhost:5000/myDonations')
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data);
+                setMyDonations(data)
+            })
+    }, [])
+
+    console.log(myDonations)
+
+
+
     return (
         <div className="w-10/12 mx-auto py-24">
             <Helmet>
@@ -9,7 +32,10 @@ const MyDonations = () => {
                 <title>My Donations</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            My Donations
+            <h2 className='text-3xl font-bold text-center'>
+
+                My Donations({myDonations.length})
+            </h2>
         </div>
     );
 };
