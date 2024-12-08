@@ -33,7 +33,7 @@ const Home = () => {
                     <div className="hero-content p-12  gap-16 flex flex-col lg:flex-row  ">
 
                         <div className="space-y-6">
-                            <h1 className="text-6xl font-extrabold">
+                            <h1 className=" text-3xl lg:text-6xl font-extrabold">
 
                                 <span className="text-red-500"> Fundraising </span>
 
