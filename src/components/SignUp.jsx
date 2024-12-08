@@ -178,15 +178,6 @@ const SignUp = () => {
             }
 
 
-
-
-
-
-
-
-
-
-
             <p className='py-4 font-bold text-center'>Already have an account? please <Link to="/signIn" className='text-red-500 '>SignIn</Link></p>
         </div>
     );
