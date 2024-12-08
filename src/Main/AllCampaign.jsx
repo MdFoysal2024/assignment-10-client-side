@@ -9,7 +9,19 @@ const AllCampaign = () => {
     const campaignData = useLoaderData()
     const [campaigns, setCampaigns] = useState(campaignData)
 
-    console.log(campaignData)
+
+    const handleSort = sortBy => {
+        if (sortBy == 'amount') {
+            const sorted = [...campaigns].sort((a, b) => a.amount - b.amount);
+            setCampaigns(sorted)
+            console.log(sorted)
+        }
+        
+    }
+
+    // console.log(campaignData)
+
+
     return (
         <div className="w-10/12 mx-auto py-24">
             <Helmet>
@@ -22,7 +34,13 @@ const AllCampaign = () => {
                 All Users <span className='text-red-500'>Campaign </span>
             </h3>
 
+            <div className=' flex justify-center'>
 
+
+                <button
+                    onClick={() => handleSort('amount')}
+                    className="btn  bg-red-500 mb-6 text-white text-lg">Sort By (Amount)</button>
+            </div>
 
             <div className="overflow-x-auto">
                 <table className="table">
