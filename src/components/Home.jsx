@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import CampaignCard from "./CampaignCard";
 
+
 const Home = () => {
 
 
@@ -25,7 +26,11 @@ const Home = () => {
 
             {/* Banner section */}
             <Banner></Banner>
+            <div className="w-10/12 mx-auto text-center py-4">
 
+
+
+            </div>
 
             {/* Running Card section */}
             <div className="w-10/12 mx-auto py-24">
