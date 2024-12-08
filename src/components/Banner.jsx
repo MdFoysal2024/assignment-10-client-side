@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 const Banner = () => {
     return (
@@ -12,8 +13,8 @@ const Banner = () => {
 
                     <div className="absolute text-white  text-center lg:left-44 lg:right-44 flex flex-col items-center bg-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
                         <h2 className=" text-3xl lg:text-8xl font-black text-white  ">Comparing the Top Online <span className='text-red-500'>
-                            
-                        <Typewriter
+
+                            <Typewriter
                                 options={{
                                     strings: ['Fundraising', 'Fundraising'],
                                     autoStart: true,
@@ -21,14 +22,13 @@ const Banner = () => {
                                 }}
                             />
 
-                            
-                            
-                            
-                            
-                            
-                            </span>  </h2>
+
+                        </span>  </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
-                        <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
+                       
+                        <Link to='/addNewCampaign'>
+                            <button className="btn font-bold hover:text-black text-white text-lg px-8 bg-red-500">START  CAMPAIGN</button>
+                        </Link>
                     </div>
 
 
@@ -46,7 +46,7 @@ const Banner = () => {
 
                     <div className="absolute text-white  text-center lg:left-44 lg:right-44 flex flex-col items-center bg-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
                         <h2 className=" text-3xl lg:text-8xl font-black ">Comparing the Top Online <span className='text-red-500'>
-                        <Typewriter
+                            <Typewriter
                                 options={{
                                     strings: ['Fundraising', 'Fundraising'],
                                     autoStart: true,
@@ -54,10 +54,13 @@ const Banner = () => {
                                 }}
                             />
 
-                        
-                            </span> </h2>
+
+                        </span> </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
-                        <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
+                        
+                        <Link to='/addNewCampaign'>
+                            <button className="btn font-bold hover:text-black text-white text-lg px-8 bg-red-500">START  CAMPAIGN</button>
+                        </Link>
                     </div>
 
 
@@ -72,7 +75,7 @@ const Banner = () => {
                     <div className="hero-overlay bg-opacity-80"></div>
                     <div className="absolute text-white  text-center lg:left-44 lg:right-44 flex flex-col items-center bg-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
                         <h2 className=" text-3xl lg:text-8xl font-black ">Comparing the Top Online <span className='text-red-500'>
-                        <Typewriter
+                            <Typewriter
                                 options={{
                                     strings: ['Fundraising', 'Fundraising'],
                                     autoStart: true,
@@ -86,7 +89,10 @@ const Banner = () => {
 
                         </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
-                        <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
+
+                        <Link to='/addNewCampaign'>
+                            <button className="btn font-bold hover:text-black text-white text-lg px-8 bg-red-500">START  CAMPAIGN</button>
+                        </Link>
                     </div>
 
 
@@ -103,7 +109,7 @@ const Banner = () => {
 
                     <div className="absolute  text-white text-center lg:left-44 lg:right-44 flex flex-col items-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
                         <h2 className=" text-3xl lg:text-8xl font-extrabold">Comparing the Top Online <span className='text-red-500'>
-                        <Typewriter
+                            <Typewriter
                                 options={{
                                     strings: ['Fundraising', 'Fundraising'],
                                     autoStart: true,
@@ -111,13 +117,19 @@ const Banner = () => {
                                 }}
                             />
 
-                            
-                            
-                            
-                            </span> </h2>
+
+
+
+                        </span> </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
 
-                        <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
+
+                        <Link to='/addNewCampaign'>
+                            <button className="btn font-bold hover:text-black text-white text-lg px-8 bg-red-500">START  CAMPAIGN</button>
+                        </Link>
+
+
+
                     </div>
 
 
