@@ -166,7 +166,7 @@ const SignUp = () => {
                     </label>
                 </div>
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Register</button>
+                    <button className="btn  bg-red-500 text-white text-lg">Register</button>
                 </div>
             </form >
 
@@ -187,7 +187,7 @@ const SignUp = () => {
 
 
 
-            <p className='py-4 font-bold text-center'>Already have an account? please <Link to="/signIn" className='text-blue-500 '>SignIn</Link></p>
+            <p className='py-4 font-bold text-center'>Already have an account? please <Link to="/signIn" className='text-red-500 '>SignIn</Link></p>
         </div>
     );
 };

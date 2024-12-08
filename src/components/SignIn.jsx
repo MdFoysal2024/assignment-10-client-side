@@ -32,9 +32,9 @@ const SignIn = () => {
         userLogin(email, password)
             .then(result => {
                 const user = result.user
-                //console.log(user)
+              
                 setUser(user);
-                //alert('login successfully')
+              
                 Swal.fire({
                     title: 'Sign In',
                     text: 'Sign In Successfully',
@@ -46,10 +46,7 @@ const SignIn = () => {
                 navigate(location?.state ? location.state : "/");
             })
             .catch((error) => {
-                //const errorCode = error.code;
-                //const errorMessage = error.message;
-                //console.log(errorCode, errorMessage)
-                // ..
+               
                 alert(error.code)
             });
 
@@ -64,7 +61,7 @@ const SignIn = () => {
                 navigate(location?.state ? location.state : "/");
             })
             .catch(error => {
-                console.log('ERROR>>>>>>>>>', error)
+                console.log('ERROR', error)
                 setUser(null);
             })
     }
@@ -96,8 +93,8 @@ const SignIn = () => {
             </Helmet>
             <div>
                 <h2 className='text-4xl font-bold text-center pb-6'>
-
-                Sign In 
+<span className="text-red-500"> Sign </span>
+                In 
                 </h2>
             </div>
 
@@ -153,7 +150,7 @@ const SignIn = () => {
 
 
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Sign In</button>
+                    <button className="btn bg-red-500 text-white text-lg">Sign In</button>
                 </div>
             </form >
 
@@ -162,7 +159,7 @@ const SignIn = () => {
                 onClick={handleGoogleLogin}
                 className="btn w-full text-lg border-2 border-gray-300"><FcGoogle className=" text-2xl" />Sign in with Google</button>
 
-            <p className='py-4 font-bold text-center'>New To The Website? please <Link to="/signUp" className='text-blue-500 '>SignUp.</Link></p>
+            <p className='py-4 font-bold text-center'>New To The Website? please <Link to="/signUp" className='text-red-500 '>SignUp.</Link></p>
         </div>
     );
 };
