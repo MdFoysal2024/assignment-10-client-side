@@ -6,6 +6,7 @@ import { FaImage } from "react-icons/fa6";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { AuthContext } from "../provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
 
@@ -52,6 +53,13 @@ const SignUp = () => {
                 //console.log(user)
                 //setUser(user);
                 setSuccess(true);
+                Swal.fire({
+                    title: 'Sign Up',
+                    text: 'Sign Up Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Thank You'
+                })
+
                 updateUserProfile({
                     displayName: name,
                     photoURL: photo
@@ -89,7 +97,7 @@ const SignUp = () => {
             <div>
                 <h2 className='text-4xl font-bold text-center pb-6'>
 
-                    Please Register
+                    Please <span className="text-red-500">Sign Up</span> 
                 </h2>
             </div>
 

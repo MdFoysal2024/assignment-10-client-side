@@ -8,6 +8,7 @@ import { sendPasswordResetEmail } from "firebase/auth";
 
 import { AuthContext } from "../provider/AuthProvider";
 import { auth } from "../firebase/firebase.config";
+import Swal from "sweetalert2";
 
 const SignIn = () => {
 
@@ -33,6 +34,15 @@ const SignIn = () => {
                 const user = result.user
                 //console.log(user)
                 setUser(user);
+                //alert('login successfully')
+                Swal.fire({
+                    title: 'Sign In',
+                    text: 'Sign In Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Thank You'
+                })
+
+
                 navigate(location?.state ? location.state : "/");
             })
             .catch((error) => {
@@ -71,7 +81,7 @@ const SignIn = () => {
 
             sendPasswordResetEmail(auth, email)
                 .then(() => {
-                    alert('Password Reset email  sent, check your email')
+                    alert('Password Reset email sent, check your email')
                 })
         }
     }
