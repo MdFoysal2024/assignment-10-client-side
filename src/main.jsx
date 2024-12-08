@@ -30,12 +30,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/campaigns')
+        loader: () => fetch('https://crowd-funding-server-xi.vercel.app/campaigns')
       },
       {
         path: "/allCampaign",
         element: <AllCampaign></AllCampaign>,
-        loader: () => fetch('http://localhost:5000/campaigns')
+        loader: () => fetch('https://crowd-funding-server-xi.vercel.app/campaigns')
       },
       {
         path: "/addNewCampaign",
@@ -84,7 +84,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: async ({ params }) => {
-          const paramsData = await fetch("http://localhost:5000/campaigns")
+          const paramsData = await fetch("https://crowd-funding-server-xi.vercel.app/campaigns")
           const data = await paramsData.json();
           const singleData = data.find(d => d._id == params.id)
           return singleData;

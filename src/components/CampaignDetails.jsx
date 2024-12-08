@@ -16,7 +16,7 @@ const CampaignDetails = () => {
         console.log(donationData)
 
 
-        fetch('http://localhost:5000/myDonations', {
+        fetch('https://crowd-funding-server-xi.vercel.app/myDonations', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

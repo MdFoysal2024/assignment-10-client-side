@@ -8,13 +8,13 @@ const MyDonations = () => {
 
     const [myDonations, setMyDonations] = useState([]);
 
-    //http://localhost:5000/myDonations
+    //https://crowd-funding-server-xi.vercel.app/myDonations
 
 
-    // http://localhost:5000/campaigns
+    // https://crowd-funding-server-xi.vercel.app/campaigns
 
     useEffect(() => {
-        fetch('http://localhost:5000/myDonations')
+        fetch('https://crowd-funding-server-xi.vercel.app/myDonations')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);

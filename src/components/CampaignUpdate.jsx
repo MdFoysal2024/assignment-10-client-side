@@ -17,7 +17,7 @@ const CampaignUpdate = () => {
     const { image, title, campaignType, description, amount, date, name, email } = updateCampaign || {};
 
     useEffect(() => {
-        fetch(`http://localhost:5000/updateCampaign/${id}`)
+        fetch(`https://crowd-funding-server-xi.vercel.app/updateCampaign/${id}`)
             .then(res => res.json())
             .then(data => {
                 setUpdateCampaign(data)
@@ -48,7 +48,7 @@ const CampaignUpdate = () => {
         // console.log(newUpdateCampaign);
 
 
-        fetch(`http://localhost:5000/newUpdateCampaign/${id}`, {
+        fetch(`https://crowd-funding-server-xi.vercel.app/newUpdateCampaign/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

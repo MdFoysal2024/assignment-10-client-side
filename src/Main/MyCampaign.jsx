@@ -14,10 +14,10 @@ const MyCampaign = () => {
     console.log(user.email);
     const [myCampaign, setMyCampaign] = useState([]);
 
-    // http://localhost:5000/campaigns
+    // https://crowd-funding-server-xi.vercel.app/campaigns
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myCampaign/${user?.email}`)
+        fetch(`https://crowd-funding-server-xi.vercel.app/myCampaign/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -44,7 +44,7 @@ const MyCampaign = () => {
                 if (result.isConfirmed) {
 
                     console.log('Delete Confirmed');
-                    fetch(`http://localhost:5000/deleteCampaign/${_id}`, {
+                    fetch(`https://crowd-funding-server-xi.vercel.app/deleteCampaign/${_id}`, {
                         method: "DELETE",
 
                     })
