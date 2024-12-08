@@ -80,7 +80,7 @@ const CampaignUpdate = () => {
     }
 
     return (
-        <div>
+        <div className='mx-6'>
 
             <div >
                 <Helmet>

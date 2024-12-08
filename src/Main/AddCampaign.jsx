@@ -54,7 +54,7 @@ const AddCampaign = () => {
 
 
     return (
-        <div>
+        <div className='mx-6'>
 
             <div >
                 <Helmet>
@@ -66,7 +66,11 @@ const AddCampaign = () => {
             </div>
 
             <div className=" container mx-auto bg-[#fde3e1] shadow-xl  mt-16 p-24 my-24 text-center flex flex-col ">
-                <h2 className="text-5xl pb-8 font-extrabold">Add New <span className='text-red-500'>Campaign</span> </h2>
+                <div className='pb-12 text-center'>
+
+                <h2 className="text-5xl pb-4 font-extrabold">Add New <span className='text-red-500'>Campaign</span> </h2>
+                <p className='text-gray-500 lg:w-1/2 mx-auto'>WhyDonate makes online fundraising easy and accessible for charities and individuals around the world. 0% platform fees, so let’s get started.</p>
+                </div>
                 <form onSubmit={handleAddCampaign}>
                  
                     <div className="md:flex mb-8 gap-4">

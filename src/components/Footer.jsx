@@ -20,7 +20,7 @@ const Footer = () => {
                             <img className='w-12' src={logo} alt="" />
                             <h3 className="text-3xl font-extrabold text-left"><span className="text-red-500">Crowd</span> Funding</h3>
                         </div>
-                        <p className='lg:text-left pt-4  text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod voluptas ratione aliquid voluptatibus possimus doloremque mollitia. </p>
+                        <p className='lg:text-left pt-4  text-gray-500'>Donations can be withdrawn after a three-day waiting period and are available for payout on a weekly, monthly, or direct basis. </p>
 
                         <div className='flex cursor-pointer gap-4 text-4xl justify-center lg:justify-start py-4'>
                         <IoLogoTwitter  className='text-[#212b3b] bg-white p-2 ' />

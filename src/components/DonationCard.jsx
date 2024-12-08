@@ -5,27 +5,26 @@ const DonationCard = ({ donation }) => {
     console.log(donation)
     return (
         <div>
-            DonationCard
-            {/* <img src={image} alt="" /> */}
+            
 
-
-
-            <div className="card bg-slate-500 w-96 shadow-xl">
+            <div className=" border-2 border-gray-300 p-6 bg-blue-100 ">
                 <figure>
                     <img className='w-full'
                         src={image}
                         alt="Shoes" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">
-                        Shoes!
+                    <h2 className="card-title ">
+                        <span className='font-bold'>Donation:</span>
+                       
                         <div className="badge badge-secondary">${amount}</div>
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
-                    </div>
+                    <h2 className="text-2xl text-red-500 font-bold">
+                       {title}
+                        
+                    </h2>
+                    <p  className='text-gray-500'>{description}</p>
+                    
                 </div>
             </div>
 

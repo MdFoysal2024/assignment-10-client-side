@@ -12,18 +12,18 @@ const Navbar = () => {
 
 
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/allCampaign'>All Campaign</NavLink></li>
-        <li><NavLink to='/addNewCampaign'>Add New Campaign</NavLink></li>
-        <li><NavLink to='/myCampaign'>My  Campaign</NavLink></li>
-        <li><NavLink to='/myDonations'>My Donations</NavLink></li>
+        <li className="tooltip " data-tip="Home"><NavLink to='/'>Home</NavLink></li>
+        <li className="tooltip " data-tip="All Campaign"><NavLink to='/allCampaign'>All Campaign</NavLink></li>
+        <li className="tooltip " data-tip="Add New Campaign"><NavLink to='/addNewCampaign' >Add New Campaign</NavLink></li>
+        <li className="tooltip " data-tip="My  Campaign"><NavLink to='/myCampaign'>My Campaign</NavLink></li>
+        <li className="tooltip " data-tip="My Donations"><NavLink to='/myDonations' >My Donations</NavLink></li>
 
     </>
 
 
     return (
         <div className=" bg-slate-100  shadow-lg">
-          
+
             <div className="navbar py-4 w-10/12 mx-auto text-[#212b3b]">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -43,11 +43,11 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-gray-500 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu menu-sm dropdown-content bg-gray-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             {links}
                         </ul>
                     </div>
-                   
+
                     <a className="btn btn-ghost text-xl">
                         <img className="w-12 " src={logo} alt="" />
                         <h2 className="text-xl  md:text-3xl pl-2 font-extrabold"> <span className="text-red-500">Crowd</span> Funding</h2>
@@ -58,7 +58,9 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
+
+            
+                <div className="navbar-end ">
 
                     {
                         user && user?.email ?
@@ -66,10 +68,10 @@ const Navbar = () => {
 
                             <>
                                 <div>
-
+    {/* className="tooltip" data-tip="Home" */}
                                     {/* Open the modal using document.getElementById('ID').showModal() method */}
-                                    <button className="" onClick={() => document.getElementById('my_modal_5').showModal()}>
-                                        <img className="w-12 mt-2 border-2 border-white rounded-full  " src={user?.photoURL} alt="" />
+                                    <button className="tooltip tooltip-right" data-tip="User Info" onClick={() => document.getElementById('my_modal_5').showModal()}>
+                                        <img className="w-12  mt-2 border-2 border-white rounded-full  "  src={user?.photoURL} alt="" />
                                     </button>
                                     <dialog id="my_modal_5" className="modal modal-top  pl-10 mt-16">
                                         <div className="bg-white px-8 py-12">
@@ -79,7 +81,7 @@ const Navbar = () => {
                                             <div className=" text-center ">
 
                                                 <Link to="/signIn">
-                                                <button onClick={logOut} className='  bg-[#394c69] text-lg  text-white font-extrabold 
+                                                    <button onClick={logOut} className='  bg-[#394c69] text-lg  text-white font-extrabold 
                                                 hover:bg-[#171e2b]
                                             
                                                 rounded-none px-6 py-2'>Log-Out</button>

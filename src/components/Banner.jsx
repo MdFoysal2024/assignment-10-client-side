@@ -11,7 +11,7 @@ const Banner = () => {
                    <div className="hero-overlay bg-opacity-80"></div>
 
                    <div className="absolute text-white  text-center lg:left-44 lg:right-44 flex flex-col items-center bg-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
-                        <h2 className=" text-3xl lg:text-8xl font-black text-white  ">Comparing the Top Online Fundraising </h2>
+                        <h2 className=" text-3xl lg:text-8xl font-black text-white  ">Comparing the Top Online <span className='text-red-500'>Fundraising</span>  </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
                         <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
                     </div>
@@ -30,7 +30,7 @@ const Banner = () => {
                     <div className="hero-overlay bg-opacity-80"></div>
 
                     <div className="absolute text-white  text-center lg:left-44 lg:right-44 flex flex-col items-center bg-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
-                        <h2 className=" text-3xl lg:text-8xl font-black ">Comparing the Top Online Fundraising </h2>
+                        <h2 className=" text-3xl lg:text-8xl font-black ">Comparing the Top Online <span className='text-red-500'>Fundraising</span> </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
                         <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
                     </div>
@@ -46,7 +46,7 @@ const Banner = () => {
                     
                     <div className="hero-overlay bg-opacity-80"></div>
                     <div className="absolute text-white  text-center lg:left-44 lg:right-44 flex flex-col items-center bg-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
-                        <h2 className=" text-3xl lg:text-8xl font-black ">Comparing the Top Online Fundraising </h2>
+                        <h2 className=" text-3xl lg:text-8xl font-black ">Comparing the Top Online <span className='text-red-500'>Fundraising</span> </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
                         <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>
                     </div>
@@ -64,7 +64,7 @@ const Banner = () => {
                      <div className="hero-overlay bg-opacity-80"></div>
 
                     <div className="absolute  text-white text-center lg:left-44 lg:right-44 flex flex-col items-center justify-center top-1/3 lg:top-1/2 lg:-translate-y-1/2 transform ">
-                        <h2 className=" text-3xl lg:text-8xl font-extrabold">Comparing the Top Online Fundraising </h2>
+                        <h2 className=" text-3xl lg:text-8xl font-extrabold">Comparing the Top Online <span className='text-red-500'>Fundraising</span> </h2>
                         <p className=" w-full lg:w-1/2 mx-auto  text-center p-6">Crowdfunding is a way to raise money for an individual or organization by collecting donations through family, friends,  donors than traditional forms of fundraising. </p>
 
                         <button className="btn font-bold hover:text-black text-white bg-[#212b3b]">START A CAMPAIGN</button>

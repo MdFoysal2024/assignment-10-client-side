@@ -33,9 +33,9 @@ const MyDonations = () => {
                 <title>My Donations</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            <h2 className='text-3xl font-bold text-center'>
+            <h2 className='text-5xl pb-12 font-bold text-center'>
 
-                My Donations({myDonations.length})
+                My  All <span className='text-red-500'>Donations   </span>
             </h2>
 
 
