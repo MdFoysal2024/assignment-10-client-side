@@ -29,13 +29,14 @@
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#Installation)
-- [Tech Stack](#tech-stack)
-- [Tech Stack](#tech-stack)
-- [Tech Stack](#tech-stack)
-- [Tech Stack](#tech-stack)
-Installation
+- [Usage](#Usage)
+- [Configuration](#Configuration)
+- [Scripts](#Scripts)
+- [Contributing](#Contributing)
+- [License](#License)
+
 Usage
-Configuration
+
 Scripts
 Contributing
 License
