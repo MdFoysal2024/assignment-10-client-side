@@ -113,20 +113,25 @@ Withdraw funds securely once the campaign is complete.
 
 
 ## 📜 Scripts
+
+```
 Command	Description
 npm run dev	Start the development server (Vite).
 npm run build	Build the project for production.
 npm run preview	Preview the built project locally.
 npm run lint	Run ESLint for code quality.
+```
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute:
 
+```
 Fork the repository.
 Create a feature branch (git checkout -b feature-branch).
 Commit your changes (git commit -m "Add new feature").
 Push to your branch (git push origin feature-branch).
 Open a pull request.
+```
 
 ## 📄 License
 This project is licensed under the MIT License.
