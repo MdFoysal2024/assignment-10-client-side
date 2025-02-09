@@ -87,6 +87,11 @@ Edit
 npm install
 Set up environment variables:
 
+
+## ⚙️ Configuration
+The project uses Firebase for authentication and data storage.
+All Firebase-related credentials must be configured in the .env file.
+
 Create a .env file in the root directory.
 
 Add the following variables (without exposing sensitive credentials):
@@ -94,7 +99,7 @@ Add the following variables (without exposing sensitive credentials):
 env
 Copy
 Edit
-VITE_apiKey=your_firebase_api_key
+-[VITE_apiKey=your_firebase_api_key]
 VITE_authDomain=your_firebase_auth_domain
 VITE_projectId=your_project_id
 VITE_storageBucket=your_storage_bucket
@@ -113,9 +118,7 @@ Share your campaign with your network via social media.
 Track your campaign performance and engage with backers.
 Withdraw funds securely once the campaign is complete.
 
-## ⚙️ Configuration
-The project uses Firebase for authentication and data storage.
-All Firebase-related credentials must be configured in the .env file.
+
 
 ## 📜 Scripts
 Command	Description
