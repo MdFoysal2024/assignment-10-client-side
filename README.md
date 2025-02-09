@@ -89,6 +89,31 @@ Set up environment variables:
 
 
 ## ⚙️ Configuration (.env)
+
+
+Create a `.env` file in the root directory and configure the following:
+
+```env
+# Kinde Authentication
+KINDE_CLIENT_ID=your_kinde_client_id
+KINDE_CLIENT_SECRET=your_kinde_client_secret
+KINDE_ISSUER_URL=your_kinde_issuer_url
+KINDE_SITE_URL=http://localhost:3000
+KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3000
+KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/auth-callback
+
+
+
+
+
+
+
+
+
+
+
+
+
 The project uses Firebase for authentication and data storage.
 All Firebase-related credentials must be configured in the .env file.
 
