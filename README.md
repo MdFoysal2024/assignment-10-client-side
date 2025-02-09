@@ -88,7 +88,7 @@ npm install
 Set up environment variables:
 
 
-## ⚙️ Configuration
+## ⚙️ Configuration (.env)
 The project uses Firebase for authentication and data storage.
 All Firebase-related credentials must be configured in the .env file.
 
