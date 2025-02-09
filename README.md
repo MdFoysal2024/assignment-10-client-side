@@ -119,10 +119,10 @@ Start the development server:
 Command	Description
 
 ```
-1. npm run dev	Start the development server (Vite).
-2. npm run build	Build the project for production.
-3. npm run preview	Preview the built project locally.
-4. npm run lint	Run ESLint for code quality.
+1. npm run dev	                    Start the development server (Vite).
+2. npm run build                  	Build the project for production.
+3. npm run preview	                Preview the built project locally.
+4. npm run lint	                   Run ESLint for code quality.
 ```
 
 ## 🤝 Contributing
