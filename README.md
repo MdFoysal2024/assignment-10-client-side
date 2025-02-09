@@ -37,8 +37,8 @@
 
 
 ## ✨ Features
--**🌍 Global Campaigns** – Create, manage, and support campaigns from anywhere.
--**💳 Secure Payments** – Integrated payment gateways to ensure smooth transactions.
+- **🌍 Global Campaigns** – Create, manage, and support campaigns from anywhere.
+- **💳 Secure Payments** – Integrated payment gateways to ensure smooth transactions.
 📣 Social Sharing – Share campaigns easily on social media platforms.
 📊 Campaign Analytics – Track campaign performance with real-time insights.
 🎨 Modern UI/UX – Built with React, TailwindCSS, and DaisyUI for an intuitive experience.
