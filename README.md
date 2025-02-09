@@ -64,7 +64,8 @@ Development Tools:
 Vite 6.0.1
 ESLint & Prettier
 PostCSS & Autoprefixer
-🚀 Installation
+
+## 🚀 Installation
 Prerequisites
 Ensure you have the following installed:
 
@@ -105,22 +106,25 @@ bash
 Copy
 Edit
 npm run dev
-🎮 Usage
+## 🎮 Usage
 Create an account or log in to start a campaign.
 Set up a funding campaign with title, description, goal, and images.
 Share your campaign with your network via social media.
 Track your campaign performance and engage with backers.
 Withdraw funds securely once the campaign is complete.
-⚙️ Configuration
+
+## ⚙️ Configuration
 The project uses Firebase for authentication and data storage.
 All Firebase-related credentials must be configured in the .env file.
-📜 Scripts
+
+## 📜 Scripts
 Command	Description
 npm run dev	Start the development server (Vite).
 npm run build	Build the project for production.
 npm run preview	Preview the built project locally.
 npm run lint	Run ESLint for code quality.
-🤝 Contributing
+
+## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute:
 
 Fork the repository.
@@ -128,6 +132,7 @@ Create a feature branch (git checkout -b feature-branch).
 Commit your changes (git commit -m "Add new feature").
 Push to your branch (git push origin feature-branch).
 Open a pull request.
-📄 License
+
+## 📄 License
 This project is licensed under the MIT License.
 
