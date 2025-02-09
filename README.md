@@ -7,7 +7,10 @@
 
 </div>
 
+
+
 <p>
+
  Crowd Funding is a dynamic online platform designed to help individuals, startups, and organizations raise funds for their projects, causes, or business ventures. Whether you're an entrepreneur launching a new 
  product, an artist seeking financial backing, or a nonprofit organization supporting a charitable cause, Crowd Funding provides the tools to connect with a global community of supporters.
 </p>
@@ -17,6 +20,8 @@
  funding your dreams!
 </p>
 
+
+🚀 **Live Demo:** [Crowd Funding](https://inspiring-cendol-2005b3.netlify.app/)
 
 
 
