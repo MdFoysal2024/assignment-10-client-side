@@ -30,7 +30,7 @@ With user-friendly campaign creation, secure payment processing, and social shar
 
 ## 📖 Table of Contents
 - [Features](#features)
-Tech Stack
+- [Tech Stack](#tech-stack)
 Installation
 Usage
 Configuration
