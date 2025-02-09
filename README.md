@@ -99,7 +99,8 @@ Add the following variables (without exposing sensitive credentials):
 env
 Copy
 Edit
--[VITE_apiKey=your_firebase_api_key]
+# Kinde Authentication
+VITE_apiKey=your_firebase_api_key
 VITE_authDomain=your_firebase_auth_domain
 VITE_projectId=your_project_id
 VITE_storageBucket=your_storage_bucket
