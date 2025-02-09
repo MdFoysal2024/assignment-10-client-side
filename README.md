@@ -95,36 +95,6 @@ Create a `.env` file in the root directory and configure the following:
 
 ```env
 # Kinde Authentication
-KINDE_CLIENT_ID=your_kinde_client_id
-KINDE_CLIENT_SECRET=your_kinde_client_secret
-KINDE_ISSUER_URL=your_kinde_issuer_url
-KINDE_SITE_URL=http://localhost:3000
-KINDE_POST_LOGOUT_REDIRECT_URL=http://localhost:3000
-KINDE_POST_LOGIN_REDIRECT_URL=http://localhost:3000/auth-callback
-
-
-
-
-
-
-
-
-
-
-
-
-
-The project uses Firebase for authentication and data storage.
-All Firebase-related credentials must be configured in the .env file.
-
-Create a .env file in the root directory.
-
-Add the following variables (without exposing sensitive credentials):
-
-env
-Copy
-Edit
-# Kinde Authentication
 VITE_apiKey=your_firebase_api_key
 VITE_authDomain=your_firebase_auth_domain
 VITE_projectId=your_project_id
@@ -132,6 +102,7 @@ VITE_storageBucket=your_storage_bucket
 VITE_messagingSenderId=your_sender_id
 VITE_appId=your_app_id
 Start the development server:
+```
 
 bash
 Copy
