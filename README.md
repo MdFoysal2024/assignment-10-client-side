@@ -101,15 +101,17 @@ VITE_appId=your_app_id
 Start the development server:
 ```
 
-npm run dev
+## npm run dev
 
 ## 🎮 Usage
+
+```
 Create an account or log in to start a campaign.
 Set up a funding campaign with title, description, goal, and images.
 Share your campaign with your network via social media.
 Track your campaign performance and engage with backers.
 Withdraw funds securely once the campaign is complete.
-
+```
 
 
 ## 📜 Scripts
