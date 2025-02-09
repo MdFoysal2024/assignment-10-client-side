@@ -29,7 +29,7 @@ A dynamic online platform designed to help individuals, startups, and organizati
 With user-friendly campaign creation, secure payment processing, and social sharing capabilities, Crowd Funding makes it easy to reach potential backers and turn your vision into reality.
 
 ## 📖 Table of Contents
-[Features](#features)
+- [Features](#features)
 Tech Stack
 Installation
 Usage
