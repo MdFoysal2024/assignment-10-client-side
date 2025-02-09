@@ -35,12 +35,8 @@
 - [Contributing](#Contributing)
 - [License](#License)
 
-Usage
 
-Scripts
-Contributing
-License
-✨ Features
+## ✨ Features
 🌍 Global Campaigns – Create, manage, and support campaigns from anywhere.
 💳 Secure Payments – Integrated payment gateways to ensure smooth transactions.
 📣 Social Sharing – Share campaigns easily on social media platforms.
