@@ -106,33 +106,34 @@ Start the development server:
 ## 🎮 Usage
 
 ```
-Create an account or log in to start a campaign.
-Set up a funding campaign with title, description, goal, and images.
-Share your campaign with your network via social media.
-Track your campaign performance and engage with backers.
-Withdraw funds securely once the campaign is complete.
+1. Create an account or log in to start a campaign.
+2. Set up a funding campaign with title, description, goal, and images.
+3. Share your campaign with your network via social media.
+4. Track your campaign performance and engage with backers.
+5. Withdraw funds securely once the campaign is complete.
 ```
 
 
 ## 📜 Scripts
 
-```
 Command	Description
-npm run dev	Start the development server (Vite).
-npm run build	Build the project for production.
-npm run preview	Preview the built project locally.
-npm run lint	Run ESLint for code quality.
+
+```
+1. npm run dev	Start the development server (Vite).
+2. npm run build	Build the project for production.
+3. npm run preview	Preview the built project locally.
+4. npm run lint	Run ESLint for code quality.
 ```
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute:
 
 ```
-Fork the repository.
-Create a feature branch (git checkout -b feature-branch).
-Commit your changes (git commit -m "Add new feature").
-Push to your branch (git push origin feature-branch).
-Open a pull request.
+1. Fork the repository.
+2. Create a feature branch (git checkout -b feature-branch).
+3. Commit your changes (git commit -m "Add new feature").
+4. Push to your branch (git push origin feature-branch).
+5. Open a pull request.
 ```
 
 ## 📄 License
