@@ -46,8 +46,8 @@
 ## 🛠 Tech Stack
 The project is built with:
 
-Frontend:
-
+## Frontend:
+- [React 18.3.1](#React 18.3.1)
 React 18.3.1
 React Router 7.0.2
 TailwindCSS 3.4.16
@@ -74,16 +74,13 @@ npm or yarn
 Steps
 Clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/yourusername/crowd-funding.git
 cd crowd-funding
-Install dependencies:
 
-bash
-Copy
-Edit
+### Install dependencies:
+
+
 npm install
 Set up environment variables:
 
@@ -104,10 +101,8 @@ VITE_appId=your_app_id
 Start the development server:
 ```
 
-bash
-Copy
-Edit
 npm run dev
+
 ## 🎮 Usage
 Create an account or log in to start a campaign.
 Set up a funding campaign with title, description, goal, and images.
@@ -135,4 +130,14 @@ Open a pull request.
 
 ## 📄 License
 This project is licensed under the MIT License.
+
+---
+
+## 🌍 Live Demo & Repository
+
+- **Live Site:** [Crowd Funding](https://inspiring-cendol-2005b3.netlify.app/)
+- **GitHub Repository:** [GitHub Link](https://github.com/MdFoysal2024/assignment-10-client-side)
+
+
+
 
