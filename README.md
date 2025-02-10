@@ -49,27 +49,24 @@ The project is built with:
 ## Frontend:
 
 - **React 18.3.1** 
-- **React 18.3.1**
-- - **React 18.3.1**
-  - - **React 18.3.1**
-    - - **React 18.3.1**
-      - - **React 18.3.1**
-        - - **React 18.3.1** 
-React Router 7.0.2
-TailwindCSS 3.4.16
-DaisyUI 4.12.14
-Typewriter Effects & Animations
-State Management & Utilities:
+- **React Router 7.0.2**
+- **TailwindCSS 3.4.16**
+- **DaisyUI 4.12.14**
+- **Typewriter Effects & Animations**
 
-Firebase 11.0.2
-LocalForage 1.10.0
-Match Sorter 8.0.0
-SweetAlert2 11.14.5
-Development Tools:
+## State Management & Utilities:
 
-Vite 6.0.1
-ESLint & Prettier
-PostCSS & Autoprefixer
+- **Firebase 11.0.2**
+- **LocalForage 1.10.0**
+- **Match Sorter 8.0.0**
+- **SweetAlert2 11.14.5**
+
+## Development Tools:
+
+- **Vite 6.0.1**
+- **ESLint & Prettier**
+- **PostCSS & Autoprefixer** 
+
 
 ## 🚀 Installation
 
