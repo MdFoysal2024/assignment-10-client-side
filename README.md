@@ -47,9 +47,14 @@
 The project is built with:
 
 ## Frontend:
-- [React 18.3.1](#React 18.3.1)
-- **React 18.3.1** –
 
+- **React 18.3.1** 
+- **React 18.3.1**
+- - **React 18.3.1**
+  - - **React 18.3.1**
+    - - **React 18.3.1**
+      - - **React 18.3.1**
+        - - **React 18.3.1** 
 React Router 7.0.2
 TailwindCSS 3.4.16
 DaisyUI 4.12.14
