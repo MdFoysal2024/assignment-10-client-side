@@ -78,13 +78,15 @@ Clone the repository:
 git clone https://github.com/yourusername/crowd-funding.git
 cd crowd-funding
 
-### Install dependencies:
+## Install dependencies:
 
-
+```
 npm install
-Set up environment variables:
-
-
+```
+## Run the development server
+```
+npm run dev
+```
 ## ⚙️ Configuration (.env)
 
 
@@ -100,8 +102,6 @@ VITE_messagingSenderId=your_sender_id
 VITE_appId=your_app_id
 Start the development server:
 ```
-
-## npm run dev
 
 ## 🎮 Usage
 
@@ -137,7 +137,7 @@ Contributions are welcome! If you'd like to contribute:
 ```
 
 ## 📄 License
-This project is licensed under the MIT License.
+This project is licensed under the**MIT License.**
 
 ---
 
