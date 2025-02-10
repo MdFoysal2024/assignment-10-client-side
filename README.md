@@ -42,7 +42,8 @@
 - **📣 Social Sharing** – Share campaigns easily on social media platforms.
 - **📊 Campaign Analytics** – Track campaign performance with real-time insights.
 - **🎨 Modern UI/UX** – Built with React, TailwindCSS, and DaisyUI for an intuitive experience.
-  
+
+  ---
 ## 🛠 Tech Stack
 The project is built with:
 
@@ -148,6 +149,7 @@ This project is licensed under the **MIT License.**
 - **Live Site:** [Crowd Funding](https://inspiring-cendol-2005b3.netlify.app/)
 - **GitHub Repository:** [GitHub Link](https://github.com/MdFoysal2024/assignment-10-client-side)
 
+---
 
 **🔥 Ready to launch your campaign? Start today and fund your dreams! 🚀**
 
