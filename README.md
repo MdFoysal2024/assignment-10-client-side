@@ -107,13 +107,13 @@ VITE_appId=your_app_id
 
 ## 🎮 Usage
 
-```
-1. Create an account or log in to start a campaign.
-2. Set up a funding campaign with title, description, goal, and images.
-3. Share your campaign with your network via social media.
-4. Track your campaign performance and engage with backers.
-5. Withdraw funds securely once the campaign is complete.
-```
+
+- Create an account or log in to start a campaign.
+- Set up a funding campaign with title, description, goal, and images.
+- Share your campaign with your network via social media.
+- Track your campaign performance and engage with backers.
+- Withdraw funds securely once the campaign is complete.
+
 ---
 
 ## 📜 Scripts
@@ -129,13 +129,13 @@ VITE_appId=your_app_id
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute:
-```
-1. Fork the repository.
-2. Create a feature branch (git checkout -b feature-branch).
-3. Commit your changes (git commit -m "Add new feature").
-4. Push to your branch (git push origin feature-branch).
-5. Open a pull request.
-```
+
+- Fork the repository.
+- Create a feature branch (git checkout -b feature-branch).
+- Commit your changes (git commit -m "Add new feature").
+- Push to your branch (git push origin feature-branch).
+- Open a pull request.
+
 
 ## 📄 License
 This project is licensed under the **MIT License.**
