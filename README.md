@@ -47,7 +47,7 @@
 ## 🛠 Tech Stack
 The project is built with:
 
-## Frontend:
+## 1. Frontend:
 
 - **React 18.3.1** 
 - **React Router 7.0.2**
@@ -55,14 +55,14 @@ The project is built with:
 - **DaisyUI 4.12.14**
 - **Typewriter Effects & Animations**
 
-## State Management & Utilities:
+## 2. State Management & Utilities:
 
 - **Firebase 11.0.2**
 - **LocalForage 1.10.0**
 - **Match Sorter 8.0.0**
 - **SweetAlert2 11.14.5**
 
-## Development Tools:
+## 3. Development Tools:
 
 - **Vite 6.0.1**
 - **ESLint & Prettier**
@@ -95,7 +95,6 @@ npm run dev
 ## ⚙️ Configuration (.env)
 
 Create a `.env` file in the root directory and configure the following:
-
 ```env
 # Kinde Authentication
 VITE_apiKey=your_firebase_api_key
@@ -104,7 +103,6 @@ VITE_projectId=your_project_id
 VITE_storageBucket=your_storage_bucket
 VITE_messagingSenderId=your_sender_id
 VITE_appId=your_app_id
-Start the development server:
 ```
 
 ## 🎮 Usage
