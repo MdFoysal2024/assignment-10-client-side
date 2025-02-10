@@ -66,20 +66,24 @@ ESLint & Prettier
 PostCSS & Autoprefixer
 
 ## 🚀 Installation
-Prerequisites
+
+**Prerequisites**
 Ensure you have the following installed:
-
-Node.js (Latest LTS recommended)
-npm or yarn
-Steps
-Clone the repository:
+- **Node.js** –(Latest LTS recommended)
+- **npm** –or **yarn**
 
 
-git clone https://github.com/yourusername/crowd-funding.git
+
+
+## Steps
+
+## Clone the repository:
+
+```
+git clone https://github.com/MdFoysal2024/crowd-funding.git
 cd crowd-funding
-
+```
 ## Install dependencies:
-
 ```
 npm install
 ```
@@ -88,7 +92,6 @@ npm install
 npm run dev
 ```
 ## ⚙️ Configuration (.env)
-
 
 Create a `.env` file in the root directory and configure the following:
 
@@ -127,7 +130,6 @@ Start the development server:
 
 ## 🤝 Contributing
 Contributions are welcome! If you'd like to contribute:
-
 ```
 1. Fork the repository.
 2. Create a feature branch (git checkout -b feature-branch).
