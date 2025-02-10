@@ -48,7 +48,8 @@ The project is built with:
 
 ## Frontend:
 - [React 18.3.1](#React 18.3.1)
-React 18.3.1
+- **React 18.3.1** –
+
 React Router 7.0.2
 TailwindCSS 3.4.16
 DaisyUI 4.12.14
@@ -71,9 +72,6 @@ PostCSS & Autoprefixer
 Ensure you have the following installed:
 - **Node.js** –(Latest LTS recommended)
 - **npm** –or **yarn**
-
-
-
 
 ## Steps
 
@@ -149,5 +147,5 @@ This project is licensed under the **MIT License.**
 - **GitHub Repository:** [GitHub Link](https://github.com/MdFoysal2024/assignment-10-client-side)
 
 
-
+**🔥 Ready to launch your campaign? Start today and fund your dreams! 🚀**
 
